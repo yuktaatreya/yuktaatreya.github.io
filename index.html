@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,9 @@
       --accent-soft: #faf3df;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -39,7 +42,7 @@
     }
 
     h1 {
-      margin: 0 0 4px;
+      margin: 0 0 15px;
       font-size: 1.5rem;
     }
 
@@ -55,6 +58,19 @@
       gap: 24px;
     }
 
+    .group-heading-website {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f0e6c9;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
     .group-heading {
       display: flex;
       align-items: center;
@@ -65,8 +81,16 @@
       font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      text-transform: uppercase;
       color: var(--accent);
+    }
+
+    .group-heading-website .dot {
+      flex-shrink: 0;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
     }
 
     .group-heading .dot {
@@ -115,40 +139,45 @@
     }
   </style>
 </head>
+
 <body>
   <main class="card">
     <h1>References</h1>
-    <p class="sub">A few favorite places on the web.</p>
 
     <div class="groups">
 
       <section class="group">
         <h2 class="group-heading">
           <span class="dot"></span>
-          The Golden Goosed Awards
+          The Golden Goose Awards
         </h2>
         <div class="group-links">
           <a class="link" href="https://www.goldengooseaward.org/" target="_blank" rel="noopener noreferrer">
             Website
             <span class="arrow">&#8599;</span>
           </a>
-          <a class="link" href="https://www.goldengooseaward.org/01awardees/rat-and-infant-massage" target="_blank" rel="noopener noreferrer">
+          <a class="link" href="https://www.goldengooseaward.org/01awardees/rat-and-infant-massage" target="_blank"
+            rel="noopener noreferrer">
             2014: Rat and Infant Massage
             <span class="arrow">&#8599;</span>
           </a>
-          <a class="link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2844909/" target="_blank" rel="noopener noreferrer">
+          <a class="link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2844909/" target="_blank"
+            rel="noopener noreferrer">
             Research Paper: Preterm Infant Massage Therapy Research: A Review
             <span class="arrow">&#8599;</span>
           </a>
-           <a class="link" href="https://www.goldengooseaward.org/01awardees/screwworms" target="_blank" rel="noopener noreferrer">
+          <a class="link" href="https://www.goldengooseaward.org/01awardees/screwworms" target="_blank"
+            rel="noopener noreferrer">
             2016: The sex life of the screwworm fly
             <span class="arrow">&#8599;</span>
           </a>
-          <a class="link" href="https://www.goldengooseaward.org/01awardees/snails" target="_blank" rel="noopener noreferrer">
+          <a class="link" href="https://www.goldengooseaward.org/01awardees/snails" target="_blank"
+            rel="noopener noreferrer">
             2022: Cone Snail Venom Eases Pain and Injects New Energy into Neuroscience
             <span class="arrow">&#8599;</span>
           </a>
-          <a class="link" href="https://www.goldengooseaward.org/01awardees/lasik" target="_blank" rel="noopener noreferrer">
+          <a class="link" href="https://www.goldengooseaward.org/01awardees/lasik" target="_blank"
+            rel="noopener noreferrer">
             2022: How a Lab Incident Led to Better Eye Surgery for Millions of People
             <span class="arrow">&#8599;</span>
           </a>
@@ -169,7 +198,7 @@
             Radiolab Episode: Golden Goose
             <span class="arrow">&#8599;</span>
           </a>
-         
+
         </div>
       </section>
 
@@ -179,11 +208,13 @@
           Some episodes of Radiolab about other Golden Goose winning researches that I found really cool!
         </h2>
         <div class="group-links">
-           <a class="link" href="https://radiolab.org/podcast/the-age-of-aquaticus" target="_blank" rel="noopener noreferrer">
+          <a class="link" href="https://radiolab.org/podcast/the-age-of-aquaticus" target="_blank"
+            rel="noopener noreferrer">
             The Age of Aquaticus : How a tiny worm that loves hot water changed the trajectory of modern science
             <span class="arrow">&#8599;</span>
           </a>
-          <a class="link" href="https://radiolab.org/podcast/baby-blue-blood-drive" target="_blank" rel="noopener noreferrer">
+          <a class="link" href="https://radiolab.org/podcast/baby-blue-blood-drive" target="_blank"
+            rel="noopener noreferrer">
             The Blood of the Horseshoe Crab: Its Improbable Contribution to International Public Health
             <span class="arrow">&#8599;</span>
           </a>
@@ -193,4 +224,5 @@
     </div>
   </main>
 </body>
+
 </html>
