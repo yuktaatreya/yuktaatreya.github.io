@@ -1,5 +1,196 @@
-<html>
-  <body>
-    <p>Hello World</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <style>
+    :root {
+      --bg: #fdfaf1;
+      --card: #ffffff;
+      --ink: #3a2f17;
+      --muted: #a99868;
+      --accent: #c9a227;
+      --accent-soft: #faf3df;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      width: 100%;
+      max-width: 380px;
+      border-radius: 20px;
+      padding: 32px 28px;
+      box-shadow: 0 12px 40px rgba(201, 162, 39, 0.18);
+      border: 1px solid #f3e9cf;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 1.5rem;
+    }
+
+    p.sub {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .groups {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .group-heading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f0e6c9;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .group-heading .dot {
+      flex-shrink: 0;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .group-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-left: 19px;
+    }
+
+    a.link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 6px 10px;
+      border-radius: 8px;
+      transition: color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+    }
+
+    a.link:hover {
+      color: var(--ink);
+      background: var(--accent-soft);
+      transform: translateX(3px);
+    }
+
+    a.link .arrow {
+      margin-left: auto;
+      opacity: 0.5;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    a.link:hover .arrow {
+      transform: translate(2px, -2px);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>References</h1>
+    <p class="sub">A few favorite places on the web.</p>
+
+    <div class="groups">
+
+      <section class="group">
+        <h2 class="group-heading">
+          <span class="dot"></span>
+          The Golden Goosed Awards
+        </h2>
+        <div class="group-links">
+          <a class="link" href="https://www.goldengooseaward.org/" target="_blank" rel="noopener noreferrer">
+            Website
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a class="link" href="https://www.goldengooseaward.org/01awardees/rat-and-infant-massage" target="_blank" rel="noopener noreferrer">
+            2014: Rat and Infant Massage
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a class="link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2844909/" target="_blank" rel="noopener noreferrer">
+            Research Paper: Preterm Infant Massage Therapy Research: A Review
+            <span class="arrow">&#8599;</span>
+          </a>
+           <a class="link" href="https://www.goldengooseaward.org/01awardees/screwworms" target="_blank" rel="noopener noreferrer">
+            2016: The sex life of the screwworm fly
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a class="link" href="https://www.goldengooseaward.org/01awardees/snails" target="_blank" rel="noopener noreferrer">
+            2022: Cone Snail Venom Eases Pain and Injects New Energy into Neuroscience
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a class="link" href="https://www.goldengooseaward.org/01awardees/lasik" target="_blank" rel="noopener noreferrer">
+            2022: How a Lab Incident Led to Better Eye Surgery for Millions of People
+            <span class="arrow">&#8599;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="group">
+        <h2 class="group-heading">
+          <span class="dot"></span>
+          The science podcast where I first heard about the Golden Goose Awards
+        </h2>
+        <div class="group-links">
+          <a class="link" href="https://radiolab.org/" target="_blank" rel="noopener noreferrer">
+            Radiolab
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a class="link" href="https://radiolab.org/podcast/golden-goose" target="_blank" rel="noopener noreferrer">
+            Radiolab Episode: Golden Goose
+            <span class="arrow">&#8599;</span>
+          </a>
+         
+        </div>
+      </section>
+
+      <section class="group">
+        <h2 class="group-heading">
+          <span class="dot"></span>
+          Some episodes of Radiolab about other Golden Goose winning researches that I found really cool!
+        </h2>
+        <div class="group-links">
+           <a class="link" href="https://radiolab.org/podcast/the-age-of-aquaticus" target="_blank" rel="noopener noreferrer">
+            The Age of Aquaticus : How a tiny worm that loves hot water changed the trajectory of modern science
+            <span class="arrow">&#8599;</span>
+          </a>
+          <a class="link" href="https://radiolab.org/podcast/baby-blue-blood-drive" target="_blank" rel="noopener noreferrer">
+            The Blood of the Horseshoe Crab: Its Improbable Contribution to International Public Health
+            <span class="arrow">&#8599;</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</body>
 </html>
